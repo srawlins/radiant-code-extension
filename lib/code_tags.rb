@@ -5,7 +5,7 @@ module CodeTags
     Highlights an code.
 
     *Usage*:
-    <pre><code><r:code lang="ruby" lines="table">...</r:code></pre></code>
+    <r:code lang="ruby" lines="table">...</r:code>
   }
   tag 'code' do |tag|
     code_processor.highlight( tag.expand.sub(/^\n/,''), tag.attr )
