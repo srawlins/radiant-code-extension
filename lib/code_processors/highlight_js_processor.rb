@@ -48,7 +48,7 @@ class CodeProcessors::HighlightJsProcessor < CodeProcessors::Base
       style_name  = Radiant::Config['code.sns_style_prefix'] || ''
       style_name += theme + '.css'
       style = Stylesheet.find_by_name(style_name).url
-      s << '<link rel="stylesheet" title="highlight.js theme" href="' + theme + '" />'
+      s << '<link rel="stylesheet" title="highlight.js theme" href="' + style + '" />'
     else
       s << '<link rel="stylesheet" title="highlight.js theme" href="http://softwaremaniacs.org/media/soft/highlight/styles/' + theme + '.css" />'
     end
